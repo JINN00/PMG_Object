@@ -1,0 +1,10 @@
+[
+	{
+		"url": "https://sampleurl-test1.com:8006",
+		"description": "sampleurl1"
+	},
+	{
+		"url": "https://sampleurl-test2:8006",
+		"description": "sampleurl2"
+	}
+]
