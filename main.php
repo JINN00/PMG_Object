@@ -45,6 +45,7 @@ function getWholist($url, $body){
 		$csrftoken = 'CSRFPreventionToken: '.$csrftoken_content;
 
 		$addgroup_url = "/pmg/addgroup_form.php";
+                echo '<div style="float: left; padding: 10px;">';
 		echo "<form action='".$addgroup_url."' method='post'>";
 		echo '<h3>'.$key['url'].'</h3>'."<button type='submit'> 그룹 생성 </button>";
 		echo "<input type='hidden' value='".$key['url']."' name='target_url'>";
@@ -106,13 +107,10 @@ function getWholist($url, $body){
 				echo '</tr>';
 			}
 			echo '<br>';
-
 			echo '</table>';
 
 		}
-		
-        curl_close($ch);
-		echo "<br><br>";
+		echo '</div>';		
 	}
 }
 ?>
